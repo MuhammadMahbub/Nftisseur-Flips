@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Universo';
+    src: local('Universo Black'), local('Universo-Black'),
+        url('Universo-Black.woff2') format('woff2'),
+        url('Universo-Black.woff') format('woff'),
+        url('Universo-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}

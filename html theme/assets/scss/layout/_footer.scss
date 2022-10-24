@@ -1,0 +1,31 @@
+/* Footer Section Style */
+.footer{
+    color: $color-white;
+    background-color: $color-black;
+    padding: toRem(60) 0;
+    &--social{
+        margin-bottom: toEm(20);
+        &__icon{
+            font-size: toRem(30);
+            padding: toEm(4);
+            @extend %transition;
+            &:hover,
+            &:focus
+            {
+                color: $color-primary;
+            }
+        }
+    }
+    &__copyright{
+        font-size: toRem(14);
+        margin-bottom: 0;
+        &__link{
+            @extend %transition;
+            &:hover,
+            &:focus{
+                color: $color-primary;
+                text-decoration: underline currentColor;
+            }
+        }
+    }
+}

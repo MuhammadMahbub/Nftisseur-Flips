@@ -1,0 +1,37 @@
+/* Common Button's Style */
+.primary-btn{
+	display: inline-block;
+	color: $color-black;
+	font-family: $font-primary;
+	font-weight: 500;
+	padding: 0.7em 1.4em;
+	background: $color-primary;
+	border: 0;
+	@extend %transition;
+	@include min-tablet{
+		font-size: toRem(18);
+	}
+	&:hover, 
+	&:focus{
+		color: $color-primary;
+		background: $color-black;
+	}
+}
+
+.scroll-top{
+	bottom: 3%;
+	right: 1%;
+	display: none;
+	cursor: pointer;
+	z-index: 7;
+	@include mobile{
+		bottom: 2%;
+	}
+	&__btn{
+		width: 2.8rem;
+		height: 2.8rem;
+		font-size: 1.1rem;
+		color: $color-black;
+		background: $color-primary;
+	}
+}
